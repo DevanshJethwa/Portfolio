@@ -3,7 +3,7 @@ import React from 'react'
 function Sidebar({isopen,setOpen}) {
     return (
         <>
-            <div className={`bg-white w-full fixed top-0shadow-black ${isopen ? "translate-y-0" : "-translate-y-full"} transition-all duration-500 `}>
+            <div className={`bg-white w-full fixed z-10 top-0shadow-black ${isopen ? "translate-y-0" : "-translate-y-full"} transition-all duration-500 `}>
                 
             <div className='flex flex-col gap-2  border-t-stone-950 border-t  font-semibold mt-12 px-3 py-2'>
                 <a href="#home" className=' '>

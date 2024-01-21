@@ -1,7 +1,7 @@
 import { IoMenu } from "react-icons/io5";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
-
+import { IoClose } from "react-icons/io5";
 
 function Navbar() {
 
@@ -37,12 +37,16 @@ function Navbar() {
                     <h1 className='hover:text-blue-700 border-b-2 border-white hover:border-b-2 hover:border-blue-500 transition-all duration-300 '>CONTACT</h1>
                 </a>
             </div>
+            <div className="flex items-center">
 
-            <h1 className="md:hidden block me-3 cursor-pointer " onClick={()=>{showSidebarFunc(!showSidebar)}}><IoMenu size={30} /></h1>
+            {!showSidebar?<IoMenu size={30}  className="md:hidden block me-3 cursor-pointer " onClick={()=>{showSidebarFunc(!showSidebar)}} />
+            :
+            <IoClose size={30} className="md:hidden block me-3 cursor-pointer " onClick={()=>{showSidebarFunc(!showSidebar)}}  />}
+            </div>
         </div>
 
         <Sidebar isopen={showSidebar} setOpen={showSidebarFunc}></Sidebar>
-
+        
         
         
     </>

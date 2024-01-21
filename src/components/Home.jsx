@@ -14,7 +14,7 @@ function Home() {
 
             </div>
 
-                <button className="mt-10 md:text-[18px] text-[12px] bg-[#051923] border border-[#051923] rounded px-4 py-2 font-bold text-white hover:bg-sky-100 hover:text-[#051923] transition-all duration-300">Download CV </button>
+                <a href="Devansh_Jethwa_CV.pdf"><button className="mt-10 md:text-[18px] text-[12px] bg-[#051923] border border-[#051923] rounded px-4 py-2 font-bold text-white hover:bg-sky-100 hover:text-[#051923] transition-all duration-300">Download CV </button></a>
                 
 
                 <a href="#contact"><button className="mt-10 md:mx-4 ms-2 md:text-[18px] text-[12px]  border border-[#051923] text-[#051923] rounded px-4 py-2 font-bold hover:bg-[#051923] hover:text-white transition-colors duration-300 " >Contact Me </button></a>
