@@ -73,7 +73,7 @@ function Contact() {
 
         try {
 
-            const response = await fetch("https://portfolio-backend-b49u.onrender.com/sendEmail", {
+            const response = await fetch("https://portfolio-be-gamma.vercel.app/sendEmail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
