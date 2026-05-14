@@ -73,7 +73,7 @@ function Contact() {
 
         try {
 
-            const response = await fetch("http://localhost:5000/sendEmail", {
+            const response = await fetch("https://portfolio-backend-b49u.onrender.com/sendEmail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
